@@ -135,7 +135,7 @@ optimizer = optim.SGD(model.parameters(), lr=0.1, momentum=0.9, weight_decay=5e-
 # 学习率衰减：每 10 轮把学习率乘 0.1，模拟“越学越细致”
 scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.1)
 
-epochs = 30 # 跑 30 轮看看
+epochs = 5 # 快速训练5轮
 print(f"开始训练 ResNet-18 on CIFAR-10...")
 
 for epoch in range(epochs):
